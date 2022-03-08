@@ -1,5 +1,5 @@
 <%@page isELIgnored="false"%>
-<h1><b> Wish Message</b></h1>
+
 sys Date :: ${sysDate}
  msg :: ${msg }
  

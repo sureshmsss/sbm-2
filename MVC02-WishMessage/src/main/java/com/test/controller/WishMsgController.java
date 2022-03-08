@@ -71,30 +71,25 @@ public class WishMsgController {
 		map.put("msg", msg);
 		map.put("sysDate", new Date());
 		return map;
-	}
+	}*/
 
 	// we are taking void its no return type so no data will be stored in DS memory
 	@RequestMapping("/wish")
-	public void getMsg() {
+	public void getMsg(Map<String, Object> map) {
 		// use service
 		String msg = service.wishMsg();
-		// create map object
-		Map<String, Object> map = new HashMap<String, Object>();
 		// add attributes
 		map.put("msg", msg);
 		map.put("sysDate", new Date());
-		// return map;
-	}*/
-	// we are returning null so no data will be stored in DS memory
-	@RequestMapping("/wish")
-	public void getMsg() {
-		// use service
-		String msg = service.wishMsg();
-		// create map object
-		Map<String, Object> map = new HashMap<String, Object>();
-		// add attributes
-		map.put("msg", msg);
-		map.put("sysDate", new Date());
-		// return map;
 	}
+	/*// we are returning null so no data will be stored in DS memory
+	@RequestMapping("/wish")
+	public String getMsg() {
+		// use service
+		String msg = service.wishMsg();
+		// add attributes
+		map.put("msg", msg);
+		map.put("sysDate", new Date());
+		return null;
+	}*/
 }
