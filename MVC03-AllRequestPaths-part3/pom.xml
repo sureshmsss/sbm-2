@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>MVC</groupId>
-	<artifactId>MVC02-Wishes-My</artifactId>
+	<artifactId>MVC03-AllRequestPaths-part3</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>MVC02-Wishes-My</name>
+	<name>MVC03-AllRequestPaths-part3</name>
 	<description>MVC BOOT</description>
 	<properties>
 		<java.version>11</java.version>
@@ -34,13 +34,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 			<scope>provided</scope>
 		</dependency>
-		
+
 	</dependencies>
 
 	<build>
