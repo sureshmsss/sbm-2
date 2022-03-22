@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class ShowHomecontroller {
 
-	@RequestMapping("/home")
+	@RequestMapping("/user")
 	public String showHome() {
 		//return LVN
 		return "welcome";
