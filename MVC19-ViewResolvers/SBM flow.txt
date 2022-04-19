@@ -1,0 +1,34 @@
+Boot App Flow
+
+1 run the app
+2 main() starts
+3 ioc container creation
+4 takes given configuration file
+5 it sees that @Configuratioin anno and creates configuration class
+6 sees base pack with @ComponentScan  then serches the package
+7 if available again seachrches for stereo type anno class spring bean
+    having singlton scope
+8 yes one spring bean is there with s-ton scop of preinstatnitation
+9 it searches for @Autowired anno 
+10 by seeing the type of autowiring that searches in the componentscan
+   pckgs not availanle
+11 searches in configuration class for @Bean methods having return 
+   type localDtaTime
+12 sees found with beanId sysDate
+13 that LDT object creation will happen
+14 that date object is instantiated with that values of date
+15 Preinstantiation of ston-scope will happen with the avialble 
+ston-scope spring beans 
+16 method of ctx.getBean(key) will be called 
+17 get the created / stored object from object from IOC container cache
+18 and ssaigns to the ref variable
+19 b.method will be called
+20 b.method execution will happen by taking/using LDT property value 
+   became it is Autowired
+21 result will stored in ref variable of string
+22 get the result of that business method
+23 o/p will printed on console by sop
+24 all objs will be closed including IOC vanished and garbage collected
+
+
+
