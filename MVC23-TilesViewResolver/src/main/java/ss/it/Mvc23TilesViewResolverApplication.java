@@ -1,0 +1,30 @@
+package ss.it;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
+import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
+
+@SpringBootApplication
+public class Mvc23TilesViewResolverApplication {
+	@Bean
+	public TilesConfigurer createTilesConfigurer() {
+		System.out.println("BootMvcProj19TilesIntegrationApplication.createTilesConfigurer()");
+		TilesConfigurer configurer = new TilesConfigurer();
+		configurer.setDefinitions("/WEB-INF/tiles.xml");
+		return configurer;
+	}
+
+	@Bean
+	public TilesViewResolver createTVResolver() {
+		System.out.println("BootMvcProj19TilesIntegrationApplication.createTilesConfigurer()");
+		TilesViewResolver resolver = new TilesViewResolver();
+		return resolver;
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(Mvc23TilesViewResolverApplication.class, args);
+	}
+
+}
